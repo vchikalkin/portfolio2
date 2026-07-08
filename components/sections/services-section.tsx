@@ -1,24 +1,28 @@
 import { getTranslations } from 'next-intl/server';
 import { ServicesContent } from '@/components/sections/services-content';
 
-const serviceIds = ['sites', 'telegram', 'webapps', 'custom'] as const;
+const listItemIds = [
+  'portfolio_site',
+  'personal_site',
+  'landing',
+  'company_site',
+  'internet_service',
+  'web_app',
+  'telegram_mini_app',
+  'telegram_bot',
+  'project_launch_help',
+] as const;
 
 export async function ServicesSection() {
   const t = await getTranslations('Services');
 
-  const items = serviceIds.map((id) => {
-    return {
-      id,
-      title: t(`items.${id}.title`),
-      description: t(`items.${id}.description`),
-    };
-  });
+  const listItems = listItemIds.map((id) => t(`list.${id}`));
 
   return (
     <ServicesContent
       title={t('title')}
       lead={t('lead')}
-      items={items}
+      listItems={listItems}
       ctaLabel={t('cta')}
     />
   );

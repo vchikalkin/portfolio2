@@ -38,25 +38,18 @@
   },
   "Services": {
     "title": "Got an idea? I can help build it",
-    "lead": "Need a website, personal page, Telegram bot, or a small app? I can help shape the idea, suggest the right approach, and build a finished product that is easy to use.",
+    "lead": "If you’ve wanted to create your own website for a long time, but don’t know where to start — I’ll help.\nTogether we’ll choose a domain, plan the structure, build your website, and publish it online. I’ll explain everything in simple words and help you at every step.",
     "cta": "Discuss your project",
-    "items": {
-      "sites": {
-        "title": "Websites",
-        "description": "Portfolio sites, personal pages, and websites for projects or companies. A modern, fast website that looks great on phones and desktops."
-      },
-      "webapps": {
-        "title": "Web applications",
-        "description": "Services, user dashboards, and web apps built around your ideas and goals."
-      },
-      "telegram": {
-        "title": "Telegram Mini Apps and bots",
-        "description": "Building practical Telegram tools: bots and mini apps for everyday tasks."
-      },
-      "custom": {
-        "title": "Help with your idea",
-        "description": "Only have an initial idea? I can turn it into a clear plan and a working solution."
-      }
+    "list": {
+      "portfolio_site": "Portfolio website",
+      "personal_site": "Personal website",
+      "landing": "Landing page",
+      "company_site": "Company website",
+      "internet_service": "Web service",
+      "web_app": "Web application",
+      "telegram_mini_app": "Telegram Mini App",
+      "telegram_bot": "Telegram bot",
+      "project_launch_help": "Help launching your project"
     }
   },
   "HomeLab": {

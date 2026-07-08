@@ -25,7 +25,7 @@ export function AboutContent({
         <h2 id="about-title" className="text-3xl font-medium tracking-tight md:text-4xl">
           {title}
         </h2>
-        <p className="mt-6 px-5 text-base leading-relaxed text-muted-foreground md:px-6 md:text-lg font-mono">
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg font-mono">
           {summary}
         </p>
 
