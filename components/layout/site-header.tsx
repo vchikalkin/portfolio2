@@ -48,7 +48,7 @@ export function SiteHeader({ name }: SiteHeaderProps) {
         <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:px-6 lg:h-16 lg:gap-4 lg:px-8">
           <a
             href="#hero"
-            className="shrink-0 text-base font-semibold tracking-tight whitespace-nowrap transition-opacity hover:opacity-70 leading-none md:text-lg"
+            className="hidden shrink-0 text-base font-semibold tracking-tight whitespace-nowrap transition-opacity hover:opacity-70 leading-none md:block md:text-lg"
           >
             {name}
           </a>
