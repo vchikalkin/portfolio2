@@ -1,7 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import { SectionShell } from '@/components/layout/section-shell';
 import { Button } from '@/components/ui/button';
-import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
 interface HeroContentProps {
@@ -42,7 +41,7 @@ export function HeroContent({
           {description}
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a href={siteConfig.links.telegram} rel="noopener noreferrer" target="_blank">
+          <a href="#contact" className="relative z-10">
             <Button size="lg" className="w-full sm:w-auto">
               {ctaPrimary}
             </Button>
