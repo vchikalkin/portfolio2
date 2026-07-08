@@ -36,8 +36,8 @@ export function HeroContent({
           {name}
         </h1>
         <p className="mt-6 text-lg text-muted-foreground md:text-xl">{tagline}</p>
-        <p className="mt-2 font-mono text-sm text-muted-foreground">{role}</p>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-2 font-mono text-xs text-muted-foreground/70 md:text-sm">{role}</p>
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg font-mono">
           {description}
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
