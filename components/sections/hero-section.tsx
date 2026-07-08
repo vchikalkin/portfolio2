@@ -13,6 +13,8 @@ export async function HeroSection() {
       description={t('description')}
       ctaPrimary={t('ctaPrimary')}
       ctaSecondary={t('ctaSecondary')}
+      trustYearsCount={trust('yearsCount')}
+      trustCompaniesCount={trust('companiesCount')}
       trustYears={trust('years')}
       trustCompanies={trust('companies')}
       trustFullstack={trust('fullstack')}

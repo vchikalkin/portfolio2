@@ -1,7 +1,8 @@
 {
   "Meta": {
     "title": "Влад Чикалкин — Full Stack разработчик",
-    "description": "Веб-разработчик с 8+ годами опыта. React, Next.js, TypeScript."
+    "description": "Веб-разработчик с 8+ годами опыта. React, Next.js, TypeScript.",
+    "jobTitle": "Full Stack разработчик"
   },
   "Nav": {
     "skip": "Перейти к контенту",
@@ -23,6 +24,8 @@
     "ctaSecondary": "Проекты"
   },
   "Trust": {
+    "yearsCount": "8+",
+    "companiesCount": "3",
     "years": "лет опыта",
     "companies": "компании",
     "fullstack": "Full Stack"

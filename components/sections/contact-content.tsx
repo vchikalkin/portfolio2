@@ -71,11 +71,11 @@ export function ContactContent({
 
         <ul className="mt-12 space-y-4">
           <ContactRow href={siteConfig.links.telegram} icon={Send} label={telegramLabel}>
-            @vchikalkin
+            {siteConfig.handles.telegram}
           </ContactRow>
 
           <ContactRow href={siteConfig.links.github} icon={CodeXml} label={githubLabel}>
-            github.com/vchikalkin
+            {siteConfig.handles.github}
           </ContactRow>
 
           <ContactRow
@@ -89,7 +89,7 @@ export function ContactContent({
           </ContactRow>
 
           <ContactRow href={siteConfig.links.linkedin} icon={Mail} label={linkedinLabel}>
-            LinkedIn
+            {linkedinLabel}
           </ContactRow>
 
           {siteConfig.links.resume ? (

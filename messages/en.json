@@ -1,7 +1,8 @@
 {
   "Meta": {
     "title": "Vlad Chikalkin — Full Stack Developer",
-    "description": "Web developer with 8+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms."
+    "description": "Web developer with 8+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms.",
+    "jobTitle": "Full Stack Developer"
   },
   "Nav": {
     "skip": "Skip to content",
@@ -23,6 +24,8 @@
     "ctaSecondary": "Projects"
   },
   "Trust": {
+    "yearsCount": "8+",
+    "companiesCount": "3",
     "years": "years of experience",
     "companies": "companies",
     "fullstack": "Full Stack"

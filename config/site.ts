@@ -1,7 +1,10 @@
 export const siteConfig = {
-  name: 'Влад Чикалкин',
   url: 'https://vchikalkin.dev',
   email: 'i@vchikalkin.ru',
+  handles: {
+    telegram: '@vchikalkin',
+    github: 'github.com/vchikalkin',
+  },
   links: {
     github: 'https://github.com/vchikalkin',
     telegram: 'https://t.me/vchikalkin',

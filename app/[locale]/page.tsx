@@ -20,6 +20,7 @@ interface HomePageProps {
 export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Meta' });
+  const hero = await getTranslations({ locale, namespace: 'Hero' });
   const canonicalUrl = `${siteConfig.url}/${locale}`;
   const languages: Record<string, string> = {};
 
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
       description: t('description'),
       type: 'website',
       url: canonicalUrl,
-      siteName: siteConfig.name,
+      siteName: hero('name'),
     },
     twitter: {
       card: 'summary_large_image',
@@ -58,12 +59,13 @@ export default async function HomePage({ params }: HomePageProps) {
 
   setRequestLocale(locale);
 
-  const jobTitle = locale === 'ru' ? 'Full Stack разработчик' : 'Full Stack Developer';
+  const meta = await getTranslations({ locale, namespace: 'Meta' });
+  const hero = await getTranslations({ locale, namespace: 'Hero' });
   const ldJson = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: siteConfig.name,
-    jobTitle,
+    name: hero('name'),
+    jobTitle: meta('jobTitle'),
     url: siteConfig.url,
     email: siteConfig.email,
     sameAs: [

@@ -1,7 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { getTranslations } from 'next-intl/server';
 import { ThemeProvider } from '@/components/controls/theme-provider';
+import { siteConfig } from '@/config/site';
 import { routing } from '@/i18n/routing';
 
 const geistSans = Geist({
@@ -14,11 +16,15 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://vchikalkin.dev'),
-  title: 'Vlad Chikalkin — Full Stack Developer',
-  description: 'Web developer with 8+ years of experience. React, Next.js, TypeScript.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: routing.defaultLocale, namespace: 'Meta' });
+
+  return {
+    metadataBase: new URL(siteConfig.url),
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default function RootLayout({
   children,
