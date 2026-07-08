@@ -4,9 +4,6 @@ import { m, useScroll, useTransform } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { LocaleSwitcher } from '@/components/locale-switcher';
 import { ThemeSwitcher } from '@/components/theme-switcher';
-import { siteConfig } from '@/config/site';
-import { useActiveSection } from '@/hooks/use-active-section';
-import { easeOut } from '@/lib/motion';
 import { cn } from '@/lib/utils';
 import type { NavItem, SectionId } from '@/types';
 
@@ -26,7 +23,6 @@ interface SiteHeaderProps {
 export function SiteHeader({ name }: SiteHeaderProps) {
   const t = useTranslations('Nav');
   const { scrollYProgress } = useScroll();
-  const activeSection = useActiveSection(siteConfig.sectionIds);
   const progressScaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const navItems: NavItem[] = navSections.map((id) => {
@@ -58,7 +54,6 @@ export function SiteHeader({ name }: SiteHeaderProps) {
             className="hidden min-w-0 flex-1 items-center justify-center gap-1 lg:flex"
           >
             {navItems.map((item) => {
-              const isActive = activeSection === item.id;
 
               return (
                 <a
@@ -66,17 +61,10 @@ export function SiteHeader({ name }: SiteHeaderProps) {
                   href={item.href}
                   className={cn(
                     'relative shrink-0 px-3 py-2 text-sm whitespace-nowrap transition-colors',
-                    isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground',
+                    'text-muted-foreground hover:text-foreground',
                   )}
                 >
                   {item.label}
-                  {isActive ? (
-                    <m.span
-                      layoutId="nav-indicator"
-                      className="absolute inset-x-3 -bottom-px h-px bg-accent"
-                      transition={{ duration: 0.25, ease: easeOut }}
-                    />
-                  ) : null}
                 </a>
               );
             })}
