@@ -26,7 +26,7 @@ export function ContactRow({
   const content = (
     <div
       className={cn(
-        'card-hover flex items-center justify-between gap-4 rounded-xl border border-border-subtle px-5 py-4',
+        'card-hover flex items-center justify-between gap-4 rounded-xl border border-border-subtle bg-surface/50 px-5 py-4',
       )}
     >
       <div className="flex items-center gap-4">
