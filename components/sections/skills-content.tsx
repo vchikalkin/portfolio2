@@ -31,8 +31,8 @@ export function SkillsContent({ title, categories }: SkillsContentProps) {
               <ul className="flex flex-wrap gap-2">
                 {category.skills.map((skill) =>
                   { return <li key={skill.id}>
-                    <span className="card-hover inline-flex items-center gap-2 rounded-lg border border-border-subtle px-3 py-1.5 text-sm text-muted-foreground">
-                      <TechIcon className="size-3.5 opacity-80" id={skill.id} />
+                    <span className="card-hover inline-flex items-center gap-2 rounded-lg border border-border-subtle bg-surface/40 px-3 py-1.5 text-sm text-foreground">
+                      <TechIcon className="size-3.5 text-foreground" id={skill.id} />
                       {skill.label}
                     </span>
                   </li> }
