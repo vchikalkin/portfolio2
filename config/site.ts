@@ -13,6 +13,7 @@ export const siteConfig = {
   sectionIds: [
     'hero',
     'about',
+    'services',
     'experience',
     'projects',
     'skills',

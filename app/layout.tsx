@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://vchikalkin.dev'),
   title: 'Vlad Chikalkin — Full Stack Developer',
-  description: 'Web developer with 7+ years of experience. React, Next.js, TypeScript.',
+  description: 'Web developer with 8+ years of experience. React, Next.js, TypeScript.',
 };
 
 export default function RootLayout({

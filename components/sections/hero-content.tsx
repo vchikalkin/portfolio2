@@ -58,7 +58,7 @@ export function HeroContent({
 
       <div className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-border-subtle pt-8">
         <div className="space-y-1">
-          <p className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">7+</p>
+          <p className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">8+</p>
           <p className="text-sm text-muted-foreground">{trustYears}</p>
         </div>
         <div className="space-y-1">

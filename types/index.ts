@@ -7,8 +7,10 @@ export interface NavItem {
 export type SectionId =
   | 'hero'
   | 'about'
+  | 'services'
   | 'experience'
   | 'projects'
+  | 'home-lab'
   | 'skills'
   | 'contact';
 

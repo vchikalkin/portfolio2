@@ -12,6 +12,7 @@ import type { NavItem, SectionId } from '@/types';
 
 const navSections: readonly SectionId[] = [
   'about',
+  'services',
   'experience',
   'projects',
   'skills',

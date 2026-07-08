@@ -1,20 +1,22 @@
 {
   "Meta": {
     "title": "Vlad Chikalkin — Full Stack Developer",
-    "description": "Web developer with 7+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms."
+    "description": "Web developer with 8+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms."
   },
   "Nav": {
     "skip": "Skip to content",
     "aria": "Main navigation",
     "about": "About",
+    "services": "Services",
     "experience": "Experience",
     "projects": "Projects",
+    "home-lab": "Home Lab",
     "skills": "Skills",
     "contact": "Contact"
   },
   "Hero": {
     "name": "Vlad Chikalkin",
-    "tagline": "Full Stack Developer · 7+ years · React / Next.js / TypeScript",
+    "tagline": "Full Stack Developer · 8+ years · React / Next.js / TypeScript",
     "role": "Senior Developer · Sovcombank Technologies",
     "description": "I build web applications, websites, and services that are pleasant to use.",
     "ctaPrimary": "Get in touch",
@@ -27,12 +29,63 @@
   },
   "About": {
     "title": "About me",
-    "summary": "I'd rather tell you about myself in person. Feel free to reach out with job offers — for example, at an accredited product company. I'll answer all your questions.",
-    "facts": {
-      "experience": "7+ years in web development and fintech",
-      "passion": "I love technology and building software people enjoy",
-      "products": "I also ship my own Telegram products on the side"
+    "summary": "For 8+ years, I have been building websites and web apps that are easy to use. I have worked on large fintech projects, and now I also help people and teams bring their ideas online, from a portfolio website to a full service. I keep learning new technologies and enjoy finding simple solutions for complex tasks.",
+    "facts": {},
+    "highlight": {
+      "title": "Large-scale fintech project",
+      "description": "Created a leasing payments calculation system for a large company. In 3+ months I developed the web app, a mobile version, and integrations with corporate services, which helped speed up the product launch and sales."
     }
+  },
+  "Services": {
+    "title": "Got an idea? I can help build it",
+    "lead": "Need a website, personal page, Telegram bot, or a small app? I can help shape the idea, suggest the right approach, and build a finished product that is easy to use.",
+    "cta": "Discuss your project",
+    "items": {
+      "sites": {
+        "title": "Websites",
+        "audience": {
+          "0": "portfolios",
+          "1": "personal pages",
+          "2": "project websites",
+          "3": "company websites"
+        },
+        "description": "Portfolio sites, personal pages, and websites for projects or companies. A modern, fast website that looks great on phones and desktops."
+      },
+      "webapps": {
+        "title": "Web applications",
+        "audience": {
+          "0": "services",
+          "1": "user dashboards",
+          "2": "apps for your idea",
+          "3": "useful tools"
+        },
+        "description": "Services, user dashboards, and web apps built around your ideas and goals."
+      },
+      "telegram": {
+        "title": "Telegram Mini Apps and bots",
+        "audience": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": ""
+        },
+        "description": "Building practical Telegram tools: bots and mini apps for everyday tasks."
+      },
+      "custom": {
+        "title": "Help with your idea",
+        "audience": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": ""
+        },
+        "description": "Only have an initial idea? I can turn it into a clear plan and a working solution."
+      }
+    }
+  },
+  "HomeLab": {
+    "title": "Home Lab",
+    "description": "I build and develop my own home infrastructure: server services, automation, and a smart home. I constantly experiment with new technologies, learn modern tools, and bring them into my personal projects."
   },
   "Experience": {
     "title": "Work experience",
