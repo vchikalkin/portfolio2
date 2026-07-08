@@ -10,12 +10,6 @@ export async function ServicesSection() {
     return {
       id,
       title: t(`items.${id}.title`),
-      audience: [
-        t(`items.${id}.audience.0`),
-        t(`items.${id}.audience.1`),
-        t(`items.${id}.audience.2`),
-        t(`items.${id}.audience.3`),
-      ].filter((value) => value.length > 0),
       description: t(`items.${id}.description`),
     };
   });

@@ -43,42 +43,18 @@
     "items": {
       "sites": {
         "title": "Websites",
-        "audience": {
-          "0": "portfolios",
-          "1": "personal pages",
-          "2": "project websites",
-          "3": "company websites"
-        },
         "description": "Portfolio sites, personal pages, and websites for projects or companies. A modern, fast website that looks great on phones and desktops."
       },
       "webapps": {
         "title": "Web applications",
-        "audience": {
-          "0": "services",
-          "1": "user dashboards",
-          "2": "apps for your idea",
-          "3": "useful tools"
-        },
         "description": "Services, user dashboards, and web apps built around your ideas and goals."
       },
       "telegram": {
         "title": "Telegram Mini Apps and bots",
-        "audience": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": ""
-        },
         "description": "Building practical Telegram tools: bots and mini apps for everyday tasks."
       },
       "custom": {
         "title": "Help with your idea",
-        "audience": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": ""
-        },
         "description": "Only have an initial idea? I can turn it into a clear plan and a working solution."
       }
     }

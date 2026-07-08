@@ -4,7 +4,6 @@ import { SectionShell } from '@/components/layout/section-shell';
 export interface ServiceEntry {
   readonly id: string;
   readonly title: string;
-  readonly audience: readonly string[];
   readonly description: string;
 }
 
@@ -29,10 +28,7 @@ export function ServicesContent({ title, lead, items, ctaLabel }: ServicesConten
             return (
               <li key={item.id} className="card-hover rounded-xl border border-border-subtle bg-surface/50 p-5 md:p-6">
                 <h3 className="text-lg font-medium tracking-tight">{item.title}</h3>
-                {item.audience.length > 0 ? (
-                  <p className="mt-2 text-sm text-muted-foreground">{item.audience.join(' · ')}</p>
-                ) : null}
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">{item.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">{item.description}</p>
               </li>
             );
           })}
