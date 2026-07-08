@@ -28,11 +28,11 @@ export function HeroContent({
   trustFullstack,
 }: HeroContentProps) {
   return (
-    <SectionShell id="hero" className="flex min-h-[85vh] flex-col justify-center pt-24 pb-12">
+    <SectionShell id="hero" className="flex min-h-[85vh] flex-col justify-center">
       <div className="relative max-w-3xl">
         <h1
           id="hero-title"
-          className="text-[clamp(2.5rem,7vw,5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-foreground"
+          className="text-[clamp(2.5rem,7vw,5rem)] leading-[1.05] font-medium tracking-[-0.03em] gradient-text"
         >
           {name}
         </h1>

@@ -53,12 +53,12 @@ export function ContactContent({
   const EmailActionIcon = hasCopied ? Check : Copy;
 
   return (
-    <SectionShell id="contact" className="min-h-[40vh] pb-16">
+    <SectionShell id="contact" className="min-h-[40vh]">
       <div className="max-w-2xl">
-        <h2 id="contact-title" className="text-3xl font-medium tracking-tight md:text-5xl">
+        <h2 id="contact-title" className="text-3xl font-medium tracking-tight md:text-4xl">
           {title}
         </h2>
-        <p className="mt-6 text-lg text-muted-foreground">{description}</p>
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">{description}</p>
 
         <div className="mt-10">
           <a href={siteConfig.links.telegram} rel="noopener noreferrer" target="_blank">
