@@ -9,7 +9,7 @@ export function ThemeProvider({ children }: Readonly<PropsWithChildren>) {
       enableSystem
       disableTransitionOnChange
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="dark"
     >
       {children}
     </NextThemesProvider>

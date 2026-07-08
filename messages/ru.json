@@ -1,24 +1,150 @@
 {
-  "HomePage": {
-    "title": "Чтобы начать, отредактируйте page.tsx",
-    "descriptionPrefix": "Ищете отправную точку или инструкции? Загляните в",
-    "descriptionMiddle": "или в",
-    "descriptionSuffix": ".",
-    "templates": "Шаблоны",
-    "learning": "Обучение",
-    "deploy": "Деплой",
-    "docs": "Документация",
-    "badge": "Boilerplate",
-    "mdx": "MDX"
+  "Meta": {
+    "title": "Влад Чикалкин — Full Stack разработчик",
+    "description": "Веб-разработчик с 7+ годами опыта. React, Next.js, TypeScript. Продукты от Telegram-приложений до веб-платформ."
   },
-  "MdxPage": {
-    "title": "Пример MDX",
-    "back": "На главную"
+  "Nav": {
+    "skip": "Перейти к контенту",
+    "aria": "Основная навигация",
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "projects": "Проекты",
+    "skills": "Навыки",
+    "contact": "Контакты"
+  },
+  "Hero": {
+    "eyebrow": "01 · Главная",
+    "hello": "Привет! Я Влад",
+    "name": "Влад Чикалкин",
+    "tagline": "Full Stack разработчик · 7+ лет · React / Next.js / TypeScript",
+    "role": "Старший разработчик · Совкомбанк Технологии",
+    "description": "Создаю удобный софт для людей — от корпоративных платформ до собственных продуктов в Telegram.",
+    "ctaPrimary": "Написать",
+    "ctaSecondary": "Проекты"
+  },
+  "Trust": {
+    "years": "лет опыта",
+    "companies": "компании",
+    "fullstack": "Full Stack"
+  },
+  "About": {
+    "eyebrow": "02 · Обо мне",
+    "title": "Обо мне",
+    "summary": "О себе я лучше расскажу лично. Вы можете написать мне и предложить работу, например, в продуктовой аккредитованной компании. Пишите! Я отвечу на все ваши вопросы.",
+    "facts": {
+      "experience": "7+ лет в веб-разработке и fintech",
+      "passion": "Люблю технологии и создавать удобный софт",
+      "products": "Параллельно развиваю собственные продукты в Telegram"
+    },
+    "photoAlt": "Влад Чикалкин",
+    "initials": "ВЧ"
+  },
+  "Experience": {
+    "eyebrow": "03 · Опыт",
+    "title": "Опыт работы",
+    "items": {
+      "sovcombanktech": {
+        "title": "Совкомбанк Технологии",
+        "role": "Старший разработчик",
+        "period": "Январь 2025 — Настоящее время",
+        "achievements": {
+          "0": "TODO: ключевое достижение в Совкомбанке",
+          "1": "TODO: вторая задача или метрика"
+        }
+      },
+      "evolution": {
+        "title": "Лизинговая компания «Эволюция»",
+        "role": "Старший разработчик",
+        "period": "Август 2020 — Январь 2025",
+        "achievements": {
+          "0": "TODO: ключевое достижение в Эволюции",
+          "1": "TODO: вторая задача или метрика"
+        }
+      },
+      "carcade": {
+        "title": "Лизинговая компания «Carcade»",
+        "role": "Разработчик",
+        "period": "Июль 2018 — Август 2020",
+        "achievements": {
+          "0": "TODO: ключевое достижение в Carcade",
+          "1": "TODO: вторая задача или метрика"
+        }
+      }
+    }
+  },
+  "Projects": {
+    "eyebrow": "04 · Проекты",
+    "title": "Проекты",
+    "viewProject": "Открыть",
+    "items": {
+      "zapishis_online_bot": {
+        "title": "Запишись.online",
+        "description": "Встроенное в Telegram мобильное приложение для мастеров, репетиторов и клиентов. Запись на занятия, управление графиком и уведомления."
+      },
+      "next_downloader_bot": {
+        "title": "Next Downloader Bot",
+        "description": "Telegram-бот для скачивания видео с TikTok, YouTube Shorts и других платформ — одним сообщением."
+      },
+      "eslint_config": {
+        "title": "ESLint Config Awesome",
+        "description": "Конфигурация ESLint с профилями для Next.js, React, TypeScript и Node.js. Используется во всех проектах."
+      },
+      "portfolio": {
+        "title": "Портфолио",
+        "description": "Персональный сайт с современным дизайном, i18n, тёмной темой и оптимизацией под Lighthouse 95+."
+      }
+    }
+  },
+  "Skills": {
+    "eyebrow": "05 · Навыки",
+    "title": "Стек",
+    "all": "Все",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Инструменты",
+      "other": "Другое"
+    },
+    "items": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS",
+      "html_css": "HTML / CSS",
+      "nodejs": "Node.js",
+      "postgresql": "PostgreSQL",
+      "rest_api": "REST API",
+      "todo_backend": "TODO: добавить backend-навык",
+      "git": "Git",
+      "eslint": "ESLint",
+      "docker": "Docker",
+      "todo_tools": "TODO: добавить инструмент",
+      "telegram_bots": "Telegram Bots",
+      "i18n": "i18n",
+      "ci_cd": "CI/CD",
+      "todo_other": "TODO: добавить навык"
+    }
+  },
+  "Contact": {
+    "eyebrow": "06 · Контакты",
+    "title": "Давайте обсудим проект",
+    "description": "Открыт к предложениям о работе, сотрудничеству и разработке сайтов под ключ.",
+    "email": "Email",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Резюме",
+    "resumeTodo": "TODO: добавить ссылку на PDF",
+    "linkedinTodo": "TODO: добавить LinkedIn",
+    "copyEmail": "Скопировать email",
+    "copied": "Скопировано",
+    "soundcloud": "SoundCloud",
+    "instagram": "Instagram"
   },
   "LocaleSwitcher": {
     "label": "Язык",
-    "ru": "Русский",
-    "en": "English"
+    "ru": "RU",
+    "en": "EN"
   },
   "ThemeSwitcher": {
     "label": "Тема",

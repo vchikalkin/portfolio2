@@ -1,24 +1,150 @@
 {
-  "HomePage": {
-    "title": "To get started, edit the page.tsx file.",
-    "descriptionPrefix": "Looking for a starting point or more instructions? Head over to",
-    "descriptionMiddle": "or the",
-    "descriptionSuffix": " center.",
-    "templates": "Templates",
-    "learning": "Learning",
-    "deploy": "Deploy Now",
-    "docs": "Documentation",
-    "badge": "Boilerplate",
-    "mdx": "MDX"
+  "Meta": {
+    "title": "Vlad Chikalkin — Full Stack Developer",
+    "description": "Web developer with 7+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms."
   },
-  "MdxPage": {
-    "title": "MDX example",
-    "back": "Back home"
+  "Nav": {
+    "skip": "Skip to content",
+    "aria": "Main navigation",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "eyebrow": "01 · Home",
+    "hello": "Hi! I'm Vlad",
+    "name": "Vlad Chikalkin",
+    "tagline": "Full Stack Developer · 7+ years · React / Next.js / TypeScript",
+    "role": "Senior Developer · Sovcombank Technologies",
+    "description": "I build software people enjoy using — from enterprise platforms to my own Telegram products.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "Projects"
+  },
+  "Trust": {
+    "years": "years of experience",
+    "companies": "companies",
+    "fullstack": "Full Stack"
+  },
+  "About": {
+    "eyebrow": "02 · About",
+    "title": "About me",
+    "summary": "I'd rather tell you about myself in person. Feel free to reach out with job offers — for example, at an accredited product company. I'll answer all your questions.",
+    "facts": {
+      "experience": "7+ years in web development and fintech",
+      "passion": "I love technology and building software people enjoy",
+      "products": "I also ship my own Telegram products on the side"
+    },
+    "photoAlt": "Vlad Chikalkin",
+    "initials": "VC"
+  },
+  "Experience": {
+    "eyebrow": "03 · Experience",
+    "title": "Work experience",
+    "items": {
+      "sovcombanktech": {
+        "title": "Sovcombank Technologies",
+        "role": "Senior Developer",
+        "period": "January 2025 — Present",
+        "achievements": {
+          "0": "TODO: key achievement at Sovcombank",
+          "1": "TODO: second task or metric"
+        }
+      },
+      "evolution": {
+        "title": "Evolution Leasing",
+        "role": "Senior Developer",
+        "period": "August 2020 — January 2025",
+        "achievements": {
+          "0": "TODO: key achievement at Evolution",
+          "1": "TODO: second task or metric"
+        }
+      },
+      "carcade": {
+        "title": "Carcade Leasing",
+        "role": "Developer",
+        "period": "July 2018 — August 2020",
+        "achievements": {
+          "0": "TODO: key achievement at Carcade",
+          "1": "TODO: second task or metric"
+        }
+      }
+    }
+  },
+  "Projects": {
+    "eyebrow": "04 · Projects",
+    "title": "Projects",
+    "viewProject": "Open",
+    "items": {
+      "zapishis_online_bot": {
+        "title": "Zapishis.online",
+        "description": "A Telegram mini app for tutors, masters, and clients. Booking, schedule management, and notifications."
+      },
+      "next_downloader_bot": {
+        "title": "Next Downloader Bot",
+        "description": "Telegram bot for downloading videos from TikTok, YouTube Shorts, and more — in a single message."
+      },
+      "eslint_config": {
+        "title": "ESLint Config Awesome",
+        "description": "ESLint configuration with profiles for Next.js, React, TypeScript, and Node.js. Used across all projects."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Personal site with modern design, i18n, dark theme, and Lighthouse 95+ optimization."
+      }
+    }
+  },
+  "Skills": {
+    "eyebrow": "05 · Skills",
+    "title": "Stack",
+    "all": "All",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "other": "Other"
+    },
+    "items": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS",
+      "html_css": "HTML / CSS",
+      "nodejs": "Node.js",
+      "postgresql": "PostgreSQL",
+      "rest_api": "REST API",
+      "todo_backend": "TODO: add backend skill",
+      "git": "Git",
+      "eslint": "ESLint",
+      "docker": "Docker",
+      "todo_tools": "TODO: add tool",
+      "telegram_bots": "Telegram Bots",
+      "i18n": "i18n",
+      "ci_cd": "CI/CD",
+      "todo_other": "TODO: add skill"
+    }
+  },
+  "Contact": {
+    "eyebrow": "06 · Contact",
+    "title": "Let's discuss your project",
+    "description": "Open to job offers, collaboration, and end-to-end website development.",
+    "email": "Email",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Resume",
+    "resumeTodo": "TODO: add PDF link",
+    "linkedinTodo": "TODO: add LinkedIn",
+    "copyEmail": "Copy email",
+    "copied": "Copied",
+    "soundcloud": "SoundCloud",
+    "instagram": "Instagram"
   },
   "LocaleSwitcher": {
     "label": "Language",
-    "ru": "Русский",
-    "en": "English"
+    "ru": "RU",
+    "en": "EN"
   },
   "ThemeSwitcher": {
     "label": "Theme",

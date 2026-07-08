@@ -1,7 +1,6 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { buttonVariants } from '@/components/ui/button';
 import { Link, usePathname } from '@/i18n/navigation';
 import { type Locale, routing } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
@@ -14,7 +13,7 @@ export function LocaleSwitcher() {
   return (
     <nav
       aria-label={t('label')}
-      className="flex gap-1 rounded-full border border-border bg-background/90 p-1 text-sm shadow-sm backdrop-blur"
+      className="flex gap-0.5 rounded-md border border-border-subtle bg-background/90 p-0.5 backdrop-blur-sm"
     >
       {routing.locales.map((nextLocale) => {
         const isActive = locale === nextLocale;
@@ -26,11 +25,10 @@ export function LocaleSwitcher() {
             href={pathname}
             locale={nextLocale}
             className={cn(
-              buttonVariants({
-                size: 'sm',
-                variant: isActive ? 'default' : 'ghost',
-              }),
-              'rounded-full',
+              'inline-flex h-7 min-w-7 items-center justify-center rounded-md px-2 text-xs font-medium transition-colors',
+              isActive
+                ? 'toggle-active'
+                : 'text-muted-foreground hover:bg-secondary hover:text-foreground',
             )}
           >
             {t(nextLocale)}

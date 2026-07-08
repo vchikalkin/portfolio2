@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { useTheme } from 'next-themes';
 import { useSyncExternalStore } from 'react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 type ThemeOption = 'light' | 'dark' | 'system';
@@ -11,7 +10,7 @@ type ThemeOption = 'light' | 'dark' | 'system';
 const themeOptions: ThemeOption[] = ['light', 'dark', 'system'];
 
 function renderThemeIcon(option: ThemeOption) {
-  const iconClassName = 'size-4';
+  const iconClassName = 'size-3.5';
 
   switch (option) {
     case 'light': {
@@ -71,7 +70,7 @@ function renderThemeIcon(option: ThemeOption) {
 }
 
 function noopUnsubscribe() {
-  // useSyncExternalStore requires a cleanup function even when unused.
+  return;
 }
 
 function subscribeToClientMount() {
@@ -96,18 +95,14 @@ export function ThemeSwitcher() {
   );
 
   const shellClassName =
-    'flex gap-1 rounded-full border border-border bg-background/90 p-1 text-sm shadow-sm backdrop-blur';
+    'flex gap-0.5 rounded-md border border-border-subtle bg-background/90 p-0.5 backdrop-blur-sm';
 
   if (!isMounted) {
     return (
       <nav aria-label={t('label')} className={shellClassName}>
-        {themeOptions.map((option) => 
-          { return <span
-            key={option}
-            className="size-10 rounded-full"
-            aria-hidden="true"
-          /> }
-        )}
+        {themeOptions.map((option) => (
+          <span key={option} className="size-7 rounded-md" aria-hidden="true" />
+        ))}
       </nav>
     );
   }
@@ -120,19 +115,23 @@ export function ThemeSwitcher() {
         const isActive = activeTheme === option;
 
         return (
-          <Button
+          <button
             key={option}
-            size="icon"
-            variant={isActive ? 'default' : 'ghost'}
+            type="button"
             aria-label={t(option)}
             aria-pressed={isActive}
-            className={cn('rounded-full')}
+            className={cn(
+              'inline-flex size-7 items-center justify-center rounded-md transition-colors',
+              isActive
+                ? 'toggle-active'
+                : 'text-muted-foreground hover:bg-secondary hover:text-foreground',
+            )}
             onClick={() => {
               setTheme(option);
             }}
           >
             {renderThemeIcon(option)}
-          </Button>
+          </button>
         );
       })}
     </nav>
