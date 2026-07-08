@@ -54,7 +54,7 @@ export function ContactContent({
 
   return (
     <SectionShell id="contact" className="min-h-[40vh]">
-      <div className="max-w-2xl">
+      <div className="max-w-3xl">
         <h2 id="contact-title" className="text-3xl font-medium tracking-tight md:text-4xl">
           {title}
         </h2>
