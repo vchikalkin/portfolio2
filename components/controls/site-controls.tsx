@@ -1,7 +1,7 @@
 'use client';
 
-import { LocaleSwitcher } from '@/components/locale-switcher';
-import { ThemeSwitcher } from '@/components/theme-switcher';
+import { LocaleSwitcher } from '@/components/controls/locale-switcher';
+import { ThemeSwitcher } from '@/components/controls/theme-switcher';
 
 export function SiteControls() {
   return (

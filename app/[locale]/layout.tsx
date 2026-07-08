@@ -3,7 +3,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import type { PropsWithChildren } from 'react';
 import { MotionProvider } from '@/components/motion/motion-provider';
-import { SetHtmlLang } from '@/components/set-html-lang';
+import { SetHtmlLang } from '@/components/controls/set-html-lang';
 import { routing } from '@/i18n/routing';
 
 interface LocaleLayoutProps extends PropsWithChildren {

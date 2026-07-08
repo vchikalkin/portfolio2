@@ -2,8 +2,8 @@
 
 import { m, useScroll, useTransform } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { LocaleSwitcher } from '@/components/locale-switcher';
-import { ThemeSwitcher } from '@/components/theme-switcher';
+import { LocaleSwitcher } from '@/components/controls/locale-switcher';
+import { ThemeSwitcher } from '@/components/controls/theme-switcher';
 import { cn } from '@/lib/utils';
 import type { NavItem, SectionId } from '@/types';
 
