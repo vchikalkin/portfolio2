@@ -105,7 +105,7 @@
       },
       "next_downloader_bot": {
         "title": "Next Downloader Bot",
-        "description": "Telegram bot for downloading videos from TikTok, YouTube Shorts, and more — in a single message."
+        "description": "Telegram bot for downloading videos from TikTok, Instagram, YouTube Shorts, and more — in a single message."
       },
       "eslint_config": {
         "title": "ESLint Config Awesome",

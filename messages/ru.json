@@ -105,7 +105,7 @@
       },
       "next_downloader_bot": {
         "title": "Next Downloader Bot",
-        "description": "Telegram-бот для скачивания видео с TikTok, YouTube Shorts и других платформ — одним сообщением."
+        "description": "Telegram-бот для скачивания видео с TikTok, Instagram, YouTube Shorts и других платформ — одним сообщением."
       },
       "eslint_config": {
         "title": "ESLint Config Awesome",
