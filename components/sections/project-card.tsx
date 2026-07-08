@@ -48,7 +48,7 @@ export function ProjectCard({
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
           {item.description}
         </p>
-        <p className="mt-6 text-sm text-accent">{viewProject}</p>
+        <p className="mt-6 text-sm text-muted-foreground">{viewProject}</p>
       </div>
     </a>
   );

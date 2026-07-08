@@ -125,3 +125,58 @@ body {
   background: var(--foreground);
   color: var(--background);
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .orb-drift-1 {
+    animation: orb-drift-1 32s ease-in-out infinite;
+  }
+
+  .orb-drift-2 {
+    animation: orb-drift-2 40s ease-in-out infinite;
+  }
+
+  .orb-drift-3 {
+    animation: orb-drift-3 28s ease-in-out infinite;
+  }
+}
+
+@keyframes orb-drift-1 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate3d(-8vw, 6vh, 0) scale(1.06);
+  }
+
+  66% {
+    transform: translate3d(5vw, 10vh, 0) scale(0.94);
+  }
+}
+
+@keyframes orb-drift-2 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(12vw, -8vh, 0) scale(1.08);
+  }
+}
+
+@keyframes orb-drift-3 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  40% {
+    transform: translate3d(-6vw, -12vh, 0) scale(1.05);
+  }
+
+  80% {
+    transform: translate3d(8vw, 4vh, 0) scale(0.96);
+  }
+}

@@ -3,7 +3,7 @@ import type { SkillCategory } from '@/types';
 export const skillCategories: readonly SkillCategory[] = [
   {
     id: 'frontend',
-    skills: ['react', 'nextjs', 'typescript', 'tailwind', 'html_css'],
+    skills: ['react', 'nextjs', 'typescript', 'tailwind'],
   },
   {
     id: 'backend',

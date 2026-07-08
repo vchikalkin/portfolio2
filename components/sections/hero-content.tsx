@@ -37,12 +37,12 @@ export function HeroContent({
         <p className="mb-4 text-sm text-muted-foreground">{hello}</p>
         <h1
           id="hero-title"
-          className="gradient-text text-[clamp(2.5rem,7vw,5rem)] leading-[1.05] font-medium tracking-[-0.03em]"
+          className="text-[clamp(2.5rem,7vw,5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-foreground"
         >
           {name}
         </h1>
         <p className="mt-6 text-lg text-muted-foreground md:text-xl">{tagline}</p>
-        <p className="mt-2 font-mono text-sm text-accent">{role}</p>
+        <p className="mt-2 font-mono text-sm text-muted-foreground">{role}</p>
         <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
           {description}
         </p>
@@ -63,11 +63,11 @@ export function HeroContent({
 
       <div className="mt-20 grid max-w-xl grid-cols-3 gap-8 border-t border-border-subtle pt-10">
         <div className="space-y-1">
-          <p className="text-3xl font-medium tracking-tight text-accent md:text-4xl">7+</p>
+          <p className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">7+</p>
           <p className="text-sm text-muted-foreground">{trustYears}</p>
         </div>
         <div className="space-y-1">
-          <p className="text-3xl font-medium tracking-tight text-accent md:text-4xl">3</p>
+          <p className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">3</p>
           <p className="text-sm text-muted-foreground">{trustCompanies}</p>
         </div>
         <div className="space-y-1">

@@ -18,7 +18,7 @@ const buttonVariants = cva(
         sm: 'h-9 px-4',
       },
       variant: {
-        default: 'btn-gradient hover:opacity-90',
+        default: 'bg-foreground text-background hover:opacity-90',
         destructive: 'bg-destructive text-destructive-foreground hover:opacity-90',
         ghost: 'hover:bg-secondary hover:text-secondary-foreground',
         link: 'text-foreground underline-offset-4 hover:underline',

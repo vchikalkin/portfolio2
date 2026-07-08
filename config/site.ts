@@ -7,7 +7,7 @@ export const siteConfig = {
     telegram: 'https://t.me/vchikalkin',
     instagram: 'https://www.instagram.com/v.chikalkin/',
     soundcloud: 'https://soundcloud.com/vchika',
-    linkedin: null as string | null, // TODO: add LinkedIn URL
+    linkedin: 'https://www.linkedin.com/in/vladislav-chikalkin-b8a251167/',
     resume: null as string | null, // TODO: add resume PDF URL
   },
   sectionIds: [

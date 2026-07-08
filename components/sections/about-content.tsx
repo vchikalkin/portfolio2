@@ -25,7 +25,7 @@ export function AboutContent({
           className="card-hover flex aspect-square max-w-[240px] items-center justify-center rounded-2xl border border-border-subtle bg-surface"
           role="img"
         >
-          <span className="gradient-text text-5xl font-medium tracking-tight">{initials}</span>
+          <span className="text-5xl font-medium tracking-tight text-foreground">{initials}</span>
         </div>
 
         <div>
@@ -39,7 +39,7 @@ export function AboutContent({
           <ul className="mt-10 space-y-4">
             {facts.map((fact) => 
               { return <li key={fact} className="flex items-start gap-3">
-                <span aria-hidden="true" className="mt-2 size-1 shrink-0 rounded-full bg-accent" />
+                <span aria-hidden="true" className="mt-2 size-1 shrink-0 rounded-full bg-foreground/30" />
                 <p className="text-muted-foreground">{fact}</p>
               </li> }
             )}

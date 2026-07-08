@@ -34,7 +34,7 @@ export default defineConfig(
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       'tailwindcss/no-custom-classname': [
         'warn',
-        { whitelist: ['card-hover', 'gradient-text', 'btn-gradient', 'toggle-active'] },
+        { whitelist: ['card-hover', 'gradient-text', 'btn-gradient', 'toggle-active', 'orb-drift-1', 'orb-drift-2', 'orb-drift-3'] },
       ],
     },
   },
