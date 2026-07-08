@@ -6,7 +6,6 @@ export async function ContactSection() {
 
   return (
     <ContactContent
-      eyebrow={t('eyebrow')}
       title={t('title')}
       description={t('description')}
       emailLabel={t('email')}

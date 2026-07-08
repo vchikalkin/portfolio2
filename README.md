@@ -50,7 +50,6 @@ messages/         i18n translations
 - LinkedIn URL in `config/site.ts`
 - Resume PDF link in `config/site.ts`
 - Project screenshots in `public/images/projects/`
-- Profile photo (currently initials placeholder)
 
 ## License
 

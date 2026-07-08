@@ -8,17 +8,16 @@ export interface SkillCategoryEntry {
 }
 
 interface SkillsContentProps {
-  readonly eyebrow: string;
   readonly title: string;
   readonly categories: readonly SkillCategoryEntry[];
 }
 
-export function SkillsContent({ eyebrow, title, categories }: SkillsContentProps) {
+export function SkillsContent({ title, categories }: SkillsContentProps) {
   const visibleCategories = categories.filter((category) => category.skills.length > 0);
 
   return (
-    <SectionShell id="skills" eyebrow={eyebrow}>
-      <h2 id="skills-title" className="mb-14 text-3xl font-medium tracking-tight md:text-4xl">
+    <SectionShell id="skills">
+      <h2 id="skills-title" className="mb-10 text-3xl font-medium tracking-tight md:text-4xl">
         {title}
       </h2>
 

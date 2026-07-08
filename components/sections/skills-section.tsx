@@ -18,5 +18,5 @@ export async function SkillsSection() {
     } })
     .filter((category) => category.skills.length > 0);
 
-  return <SkillsContent eyebrow={t('eyebrow')} title={t('title')} categories={categories} />;
+  return <SkillsContent title={t('title')} categories={categories} />;
 }

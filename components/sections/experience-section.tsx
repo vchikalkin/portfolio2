@@ -22,6 +22,6 @@ export async function ExperienceSection() {
   });
 
   return (
-    <ExperienceContent eyebrow={t('eyebrow')} title={t('title')} items={items} />
+    <ExperienceContent title={t('title')} items={items} />
   );
 }

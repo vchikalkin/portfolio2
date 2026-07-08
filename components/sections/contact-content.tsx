@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { siteConfig } from '@/config/site';
 
 interface ContactContentProps {
-  readonly eyebrow: string;
   readonly title: string;
   readonly description: string;
   readonly emailLabel: string;
@@ -23,7 +22,6 @@ interface ContactContentProps {
 }
 
 export function ContactContent({
-  eyebrow,
   title,
   description,
   emailLabel,
@@ -55,7 +53,7 @@ export function ContactContent({
   const EmailActionIcon = hasCopied ? Check : Copy;
 
   return (
-    <SectionShell id="contact" eyebrow={eyebrow} className="min-h-[50vh] pb-24">
+    <SectionShell id="contact" className="min-h-[40vh] pb-16">
       <div className="max-w-2xl">
         <h2 id="contact-title" className="text-3xl font-medium tracking-tight md:text-5xl">
           {title}
@@ -90,11 +88,9 @@ export function ContactContent({
             {siteConfig.email}
           </ContactRow>
 
-          {siteConfig.links.linkedin ? (
-            <ContactRow href={siteConfig.links.linkedin} icon={Mail} label={linkedinLabel}>
-              LinkedIn
-            </ContactRow>
-          ) : null}
+          <ContactRow href={siteConfig.links.linkedin} icon={Mail} label={linkedinLabel}>
+            LinkedIn
+          </ContactRow>
 
           {siteConfig.links.resume ? (
             <ContactRow href={siteConfig.links.resume} icon={Mail} label={resumeLabel}>

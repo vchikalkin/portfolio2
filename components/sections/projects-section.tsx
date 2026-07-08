@@ -15,7 +15,6 @@ export async function ProjectsSection() {
 
   return (
     <ProjectsContent
-      eyebrow={t('eyebrow')}
       title={t('title')}
       viewProject={t('viewProject')}
       items={items}

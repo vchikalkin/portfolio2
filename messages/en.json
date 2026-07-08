@@ -13,8 +13,6 @@
     "contact": "Contact"
   },
   "Hero": {
-    "eyebrow": "01 · Home",
-    "hello": "Hi! I'm Vlad",
     "name": "Vlad Chikalkin",
     "tagline": "Full Stack Developer · 7+ years · React / Next.js / TypeScript",
     "role": "Senior Developer · Sovcombank Technologies",
@@ -28,19 +26,15 @@
     "fullstack": "Full Stack"
   },
   "About": {
-    "eyebrow": "02 · About",
     "title": "About me",
     "summary": "I'd rather tell you about myself in person. Feel free to reach out with job offers — for example, at an accredited product company. I'll answer all your questions.",
     "facts": {
       "experience": "7+ years in web development and fintech",
       "passion": "I love technology and building software people enjoy",
       "products": "I also ship my own Telegram products on the side"
-    },
-    "photoAlt": "Vlad Chikalkin",
-    "initials": "VC"
+    }
   },
   "Experience": {
-    "eyebrow": "03 · Experience",
     "title": "Work experience",
     "items": {
       "sovcombanktech": {
@@ -73,7 +67,6 @@
     }
   },
   "Projects": {
-    "eyebrow": "04 · Projects",
     "title": "Projects",
     "viewProject": "Open",
     "items": {
@@ -92,11 +85,18 @@
       "portfolio": {
         "title": "Portfolio",
         "description": "Personal site with modern design, i18n, dark theme, and Lighthouse 95+ optimization."
+      },
+      "next_tailwind_eslint_boilerplate": {
+        "title": "Next Tailwind ESLint Boilerplate",
+        "description": "A Next.js boilerplate with Tailwind, ESLint, i18n, and a clean baseline architecture for new projects."
+      },
+      "victoria_pianist_site": {
+        "title": "Victoria Chikalkina | Pianist",
+        "description": "A personal website for a pianist with portfolio-style presentation and artist profile."
       }
     }
   },
   "Skills": {
-    "eyebrow": "05 · Skills",
     "title": "Stack",
     "all": "All",
     "categories": {
@@ -126,7 +126,6 @@
     }
   },
   "Contact": {
-    "eyebrow": "06 · Contact",
     "title": "Let's discuss your project",
     "description": "Open to job offers, collaboration, and end-to-end website development.",
     "email": "Email",

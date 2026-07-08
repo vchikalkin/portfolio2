@@ -5,8 +5,6 @@ import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
 
 interface HeroContentProps {
-  readonly eyebrow: string;
-  readonly hello: string;
   readonly name: string;
   readonly tagline: string;
   readonly role: string;
@@ -19,8 +17,6 @@ interface HeroContentProps {
 }
 
 export function HeroContent({
-  eyebrow,
-  hello,
   name,
   tagline,
   role,
@@ -32,9 +28,8 @@ export function HeroContent({
   trustFullstack,
 }: HeroContentProps) {
   return (
-    <SectionShell id="hero" eyebrow={eyebrow} className="flex min-h-[90vh] flex-col justify-center pt-28 pb-16">
+    <SectionShell id="hero" className="flex min-h-[85vh] flex-col justify-center pt-24 pb-12">
       <div className="relative max-w-3xl">
-        <p className="mb-4 text-sm text-muted-foreground">{hello}</p>
         <h1
           id="hero-title"
           className="text-[clamp(2.5rem,7vw,5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-foreground"
@@ -43,10 +38,10 @@ export function HeroContent({
         </h1>
         <p className="mt-6 text-lg text-muted-foreground md:text-xl">{tagline}</p>
         <p className="mt-2 font-mono text-sm text-muted-foreground">{role}</p>
-        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
           {description}
         </p>
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a href={siteConfig.links.telegram} rel="noopener noreferrer" target="_blank">
             <Button size="lg" className="w-full sm:w-auto">
               {ctaPrimary}
@@ -61,7 +56,7 @@ export function HeroContent({
         </div>
       </div>
 
-      <div className="mt-20 grid max-w-xl grid-cols-3 gap-8 border-t border-border-subtle pt-10">
+      <div className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-border-subtle pt-8">
         <div className="space-y-1">
           <p className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">7+</p>
           <p className="text-sm text-muted-foreground">{trustYears}</p>

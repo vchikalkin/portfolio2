@@ -11,19 +11,18 @@ export interface ExperienceEntry {
 }
 
 interface ExperienceContentProps {
-  readonly eyebrow: string;
   readonly title: string;
   readonly items: readonly ExperienceEntry[];
 }
 
-export function ExperienceContent({ eyebrow, title, items }: ExperienceContentProps) {
+export function ExperienceContent({ title, items }: ExperienceContentProps) {
   return (
-    <SectionShell id="experience" eyebrow={eyebrow}>
-      <h2 id="experience-title" className="mb-14 text-3xl font-medium tracking-tight md:text-4xl">
+    <SectionShell id="experience">
+      <h2 id="experience-title" className="mb-10 text-3xl font-medium tracking-tight md:text-4xl">
         {title}
       </h2>
 
-      <div className="relative space-y-12 lg:space-y-16 lg:pl-10">
+      <div className="relative space-y-8 lg:space-y-10 lg:pl-10">
         <div
           aria-hidden="true"
           className="absolute top-0 left-0 hidden h-full w-px bg-foreground/10 lg:block"

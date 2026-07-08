@@ -7,8 +7,6 @@ export async function HeroSection() {
 
   return (
     <HeroContent
-      eyebrow={t('eyebrow')}
-      hello={t('hello')}
       name={t('name')}
       tagline={t('tagline')}
       role={t('role')}
