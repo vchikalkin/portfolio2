@@ -1,4 +1,4 @@
-import { Braces, Globe, Languages,type LucideIcon  } from 'lucide-react';
+import { Braces, Globe, Languages, type LucideIcon } from 'lucide-react';
 import type { IconType } from 'react-icons';
 import {
   SiCss,
@@ -7,10 +7,12 @@ import {
   SiGit,
   SiGithubactions,
   SiHtml5,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiReact,
+  SiRedis,
   SiTailwindcss,
   SiTelegram,
   SiTypescript,
@@ -26,7 +28,9 @@ const skillIcons: Record<string, TechIconComponent> = {
   tailwind: SiTailwindcss,
   html_css: SiHtml5,
   nodejs: SiNodedotjs,
+  nestjs: SiNestjs,
   postgresql: SiPostgresql,
+  redis: SiRedis,
   rest_api: Braces,
   git: SiGit,
   eslint: SiEslint,

@@ -7,7 +7,7 @@ export const skillCategories: readonly SkillCategory[] = [
   },
   {
     id: 'backend',
-    skills: ['nodejs', 'postgresql', 'rest_api', 'todo_backend'],
+    skills: ['nodejs', 'nestjs', 'postgresql', 'redis', 'todo_backend'],
   },
   {
     id: 'tools',
