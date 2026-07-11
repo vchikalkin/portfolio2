@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Vlad Chikalkin — Full Stack Developer",
-    "description": "Web developer with 8+ years of experience. React, Next.js, TypeScript. From Telegram apps to web platforms.",
+    "description": "Web developer, 8+ years. React, Next.js, TypeScript. Telegram apps and web platforms.",
     "jobTitle": "Full Stack Developer"
   },
   "Nav": {
@@ -19,7 +19,7 @@
     "name": "Vlad Chikalkin",
     "tagline": "Full Stack Developer · 8+ years · React / Next.js / TypeScript",
     "role": "Senior Developer · Sovcombank Technologies",
-    "description": "I build web applications, websites, and services that are pleasant to use.",
+    "description": "I build web apps, sites, and services.",
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "Projects"
   },
@@ -32,16 +32,16 @@
   },
   "About": {
     "title": "About me",
-    "summary": "For 8+ years, I have been building websites and web apps that are easy to use. I have worked on large fintech projects, and now I also help people and teams bring their ideas online, from a portfolio website to a full service. I keep learning new technologies and enjoy finding simple solutions for complex tasks.",
+    "summary": "Eight years building websites and web apps. Fintech background. I help people and teams ship online: portfolio sites, landing pages, full services.",
     "facts": {},
     "highlight": {
-      "title": "Large-scale fintech project",
-      "description": "Created a leasing payments calculation system for a large company. In 3+ months I developed the web app, a mobile version, and integrations with corporate services, which helped speed up the product launch and sales."
+      "title": "Leasing payment calculator",
+      "description": "Built a leasing payment calculator at Evolution. In three months: web app, mobile version, integrations with corporate services. Product and sales launched faster."
     }
   },
   "Services": {
-    "title": "Got an idea? I can help build it",
-    "lead": "If you’ve wanted to create your own website for a long time, but don’t know where to start — I’ll help.\nTogether we’ll choose a domain, plan the structure, build your website, and publish it online. I’ll explain everything in simple words and help you at every step.",
+    "title": "Your site, from idea to launch",
+    "lead": "Want your own site but stuck on the first step? We pick a domain, plan the structure, build it, and publish.",
     "cta": "Discuss your project",
     "list": [
       "Portfolio website",
@@ -56,7 +56,7 @@
   },
   "HomeLab": {
     "title": "Home Lab",
-    "description": "I build and develop my own home infrastructure: services, automation, and a smart home. I constantly experiment with new technologies, learn modern tools, and bring them into my personal projects."
+    "description": "Home infrastructure: servers, automation, smart home. I test tools here before client work."
   },
   "Experience": {
     "title": "Work experience",
@@ -100,7 +100,7 @@
       },
       "next_downloader_bot": {
         "title": "Next Downloader Bot",
-        "description": "Telegram bot for downloading videos from TikTok, Instagram, YouTube Shorts, and more — in a single message."
+        "description": "Telegram bot for downloading videos from TikTok, Instagram, YouTube Shorts, and more. One message."
       },
       "eslint_config": {
         "title": "ESLint Config Awesome",
@@ -108,7 +108,7 @@
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Personal site with modern design, i18n, dark theme, and Lighthouse 95+ optimization."
+        "description": "Personal site with i18n, dark theme, and Lighthouse 95+."
       },
       "next_tailwind_eslint_boilerplate": {
         "title": "Next Tailwind ESLint Boilerplate",
@@ -116,7 +116,7 @@
       },
       "victoria_pianist_site": {
         "title": "Pianist website",
-        "description": "A personal website for a pianist with portfolio-style presentation and artist profile."
+        "description": "Site for a pianist: repertoire, bio, contact form."
       }
     }
   },
@@ -151,7 +151,7 @@
   },
   "Contact": {
     "title": "Let's discuss your project",
-    "description": "Open to job offers, collaboration, and end-to-end website development.",
+    "description": "Jobs, collaboration, and full site builds.",
     "email": "Email",
     "telegram": "Telegram",
     "github": "GitHub",
