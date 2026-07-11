@@ -43,17 +43,16 @@
     "title": "Got an idea? I can help build it",
     "lead": "If you’ve wanted to create your own website for a long time, but don’t know where to start — I’ll help.\nTogether we’ll choose a domain, plan the structure, build your website, and publish it online. I’ll explain everything in simple words and help you at every step.",
     "cta": "Discuss your project",
-    "list": {
-      "portfolio_site": "Portfolio website",
-      "personal_site": "Personal website",
-      "landing": "Landing page",
-      "company_site": "Company website",
-      "internet_service": "Web service",
-      "web_app": "Web application",
-      "telegram_mini_app": "Telegram Mini App",
-      "telegram_bot": "Telegram bot",
-      "project_launch_help": "Help launching your project"
-    }
+    "list": [
+      "Portfolio website",
+      "Personal website",
+      "Landing page",
+      "Company website",
+      "Web application",
+      "Telegram Mini App",
+      "Telegram bot",
+      "Help launching your project"
+    ]
   },
   "HomeLab": {
     "title": "Home Lab",
