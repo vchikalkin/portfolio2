@@ -7,7 +7,7 @@ export const projectItems: readonly ProjectItem[] = [
   },
   {
     id: 'victoria_pianist_site',
-    url: 'https://portfolio-victoriachikalkina-com.vercel.app/',
+    url: 'https://victoriachikalkina.com',
   },
   {
     id: 'next_downloader_bot',
