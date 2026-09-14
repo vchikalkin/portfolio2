@@ -3,6 +3,7 @@
 import { m, useScroll, useTransform } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { LocaleSwitcher } from '@/components/controls/locale-switcher';
+import { MobileNav } from '@/components/controls/mobile-nav';
 import { ThemeSwitcher } from '@/components/controls/theme-switcher';
 import { cn } from '@/lib/utils';
 import type { NavItem, SectionId } from '@/types';
@@ -41,20 +42,22 @@ export function SiteHeader({ name }: SiteHeaderProps) {
         style={{ scaleX: progressScaleX }}
       />
       <header className="fixed inset-x-0 top-0 z-40 border-b border-border-subtle bg-background/80 backdrop-blur-sm">
-        <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:px-6 lg:h-16 lg:gap-4 lg:px-8">
-          <a
-            href="#hero"
-            className="hidden shrink-0 text-base font-semibold tracking-tight whitespace-nowrap transition-opacity hover:opacity-70 leading-none md:block md:text-lg"
-          >
-            {name}
-          </a>
+        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between gap-3 px-4 sm:px-6 lg:h-16 lg:gap-4 lg:px-8">
+          <div className="flex min-w-0 items-center gap-3">
+            <MobileNav items={navItems} />
+            <a
+              href="#hero"
+              className="hidden shrink-0 text-base leading-none font-semibold tracking-tight whitespace-nowrap transition-opacity hover:opacity-70 md:block md:text-lg"
+            >
+              {name}
+            </a>
+          </div>
 
           <nav
             aria-label={t('aria')}
             className="hidden min-w-0 flex-1 items-center justify-center gap-1 lg:flex"
           >
             {navItems.map((item) => {
-
               return (
                 <a
                   key={item.id}
@@ -70,7 +73,7 @@ export function SiteHeader({ name }: SiteHeaderProps) {
             })}
           </nav>
 
-          <div className="ml-auto flex shrink-0 items-center gap-1.5">
+          <div className="flex shrink-0 items-center gap-1.5">
             <ThemeSwitcher />
             <LocaleSwitcher />
           </div>
