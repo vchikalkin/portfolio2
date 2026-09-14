@@ -30,7 +30,7 @@ export function ExperienceContent({ title, items }: ExperienceContentProps) {
       >
         <div
           aria-hidden="true"
-          className="absolute top-0 left-0 hidden h-full w-px bg-foreground/10 lg:block"
+          className="bg-foreground/10 absolute top-0 left-0 hidden h-full w-px lg:block"
         />
 
         {items.map((item) => {
@@ -40,7 +40,7 @@ export function ExperienceContent({ title, items }: ExperienceContentProps) {
             <article
               key={item.id}
               className={cn(
-                'card-hover relative rounded-xl border border-border-subtle',
+                'card-hover border-border-subtle relative rounded-xl border',
                 hasAchievements
                   ? 'bg-surface/50 p-6 md:p-8'
                   : 'bg-surface/40 px-4 py-3 md:px-5 md:py-4',
@@ -49,8 +49,8 @@ export function ExperienceContent({ title, items }: ExperienceContentProps) {
               <div
                 aria-hidden="true"
                 className={cn(
-                  'absolute -left-10 hidden size-2 rounded-full border border-border-subtle bg-accent lg:block',
-                  hasAchievements ? 'top-8' : 'top-5',
+                  'border-border-subtle bg-accent absolute -left-10 hidden size-2 rounded-full border lg:block',
+                  hasAchievements ? 'top-8' : 'top-10',
                 )}
               />
               <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
@@ -60,9 +60,9 @@ export function ExperienceContent({ title, items }: ExperienceContentProps) {
                       {item.title}
                     </ExternalLink>
                   </h3>
-                  <p className="mt-1 text-muted-foreground">{item.role}</p>
+                  <p className="text-muted-foreground mt-1">{item.role}</p>
                 </div>
-                <p className="font-mono text-sm text-muted-foreground">{item.period}</p>
+                <p className="text-muted-foreground font-mono text-sm">{item.period}</p>
               </div>
               {hasAchievements ? (
                 <ul className="mt-6 space-y-2">
@@ -70,11 +70,11 @@ export function ExperienceContent({ title, items }: ExperienceContentProps) {
                     return (
                       <li
                         key={achievement}
-                        className="flex items-start gap-3 text-sm text-muted-foreground"
+                        className="text-muted-foreground flex items-start gap-3 text-sm"
                       >
                         <span
                           aria-hidden="true"
-                          className="mt-2 size-1 shrink-0 rounded-full bg-accent/60"
+                          className="bg-accent/60 mt-2 size-1 shrink-0 rounded-full"
                         />
                         {achievement}
                       </li>
