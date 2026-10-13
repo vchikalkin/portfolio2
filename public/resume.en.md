@@ -1,4 +1,5 @@
 # Vladislav Chikalkin
+
 **Senior Frontend Engineer (React / TypeScript) | Fullstack Product**
 
 Moscow · Remote / Hybrid  
@@ -9,7 +10,9 @@ Portfolio: https://vchikalkin.dev
 
 ## Summary
 
-7+ years in leasing. I built the sales calculator from scratch: React and Next.js on the UI, a .NET/C# service for the payment schedule and commercial-proposal formulas, deploys in Docker. About 500 people use it across cities, and peaks hit 10–20 proposals a second. The CRM API and SQL are slow, so I cache the reference fields in Redis with a TTL on each field.
+Senior Frontend / Fullstack Developer with 8+ years of experience. React, TypeScript, Next.js, JavaScript.
+
+Portfolio: https://vchikalkin.dev
 
 ---
 
@@ -27,6 +30,7 @@ Portfolio: https://vchikalkin.dev
 ## Professional Experience
 
 ### Senior Fullstack Developer — LK Evolution (evoleasing.ru)
+
 **Moscow · Aug 2020 – Present**
 
 I joined as one of the first ~20 people. I owned the calculator UI, the .NET calculation service, and deploys. The team was 5 people: me, one other senior, two developers, one junior. Other developers wrote the CRM .NET backend. On the calculator I reviewed code and mentored juniors and mids.
@@ -43,6 +47,7 @@ I joined as one of the first ~20 people. I owned the calculator UI, the .NET cal
 **Stack:** TypeScript, React, Next.js, MobX, GraphQL, tRPC, Zod, Ant Design, Nest.js, PostgreSQL, MongoDB, Redis, Docker, nginx, Traefik, GitLab CI, Azure DevOps, Jest, Vitest, Sentry
 
 ### Fullstack Developer — Carcade Leasing (carcade.com)
+
 **Russia · Jul 2018 – Aug 2020**
 
 - I built an internal auction for written-off equipment. I take WebSocket bids into a queue and keep them in millisecond order.

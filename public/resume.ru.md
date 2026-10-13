@@ -1,4 +1,5 @@
 # Чикалкин Владислав
+
 **Senior Frontend Engineer (React / TypeScript) | Fullstack Product**
 
 Москва · удалённо / гибрид  
@@ -9,7 +10,9 @@
 
 ## О себе
 
-7+ лет в лизинге. С нуля сделал калькулятор, на котором работают продажи: React и Next.js, сервис на .NET/C# с формулами графика платежей и коммерческого предложения, деплой в Docker. Им пользуются около 500 человек в разных городах, в пике 10–20 КП в секунду. CRM отвечает медленно, поэтому справочники держу в Redis, у каждого поля свой TTL.
+Senior Frontend / Fullstack Developer, 8+ лет опыта. React, TypeScript, Next.js, JavaScript.
+
+Портфолио: https://vchikalkin.dev
 
 ---
 
@@ -27,6 +30,7 @@
 ## Опыт
 
 ### Senior Fullstack Developer — ЛК Эволюция (evoleasing.ru)
+
 **Москва · август 2020 – настоящее время**
 
 Пришёл одним из первых ~20 человек. Делал интерфейс калькулятора, расчёт на .NET и деплой. В команде 5 человек: я и ещё один senior, двое разработчиков, один junior. CRM на .NET писали другие. По калькулятору ревьюил код и менторил junior и middle.
@@ -43,6 +47,7 @@
 **Стек:** TypeScript, React, Next.js, MobX, GraphQL, tRPC, Zod, Ant Design, Nest.js, PostgreSQL, MongoDB, Redis, Docker, nginx, Traefik, GitLab CI, Azure DevOps, Jest, Vitest, Sentry
 
 ### Fullstack Developer — Carcade Leasing (carcade.com)
+
 **Россия · июль 2018 – август 2020**
 
 - Сделал внутренний аукцион списанной техники. Ставки принимаю по WebSocket и складываю в очередь с порядком на миллисекундах.

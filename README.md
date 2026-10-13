@@ -1,6 +1,6 @@
 # vchikalkin.dev
 
-Personal portfolio of **Vlad Chikalkin** — Full Stack developer with 7+ years of experience in fintech and enterprise.
+Personal portfolio of **Vlad Chikalkin** — Full Stack developer with 8+ years of experience in fintech and enterprise.
 
 ## Stack
 
