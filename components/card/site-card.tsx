@@ -14,6 +14,7 @@ export function SiteCard() {
   const { locale } = useLocaleState();
   const resumeHref =
     locale === 'ru' ? siteConfig.links.resumeRu : siteConfig.links.resumeEn;
+  const years = new Date().getFullYear() - siteConfig.careerStartYear;
 
   return (
     <div className="flex min-h-dvh flex-col px-5 pt-[max(1.25rem,env(safe-area-inset-top))] pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-8 lg:h-dvh lg:overflow-hidden lg:px-12">
@@ -37,7 +38,9 @@ export function SiteCard() {
             {t('Card.name')}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg">
-            {t('Card.tagline')}
+            {t('Card.tagline', { years })}
+            <br />
+            {t('Card.stackLine')}
           </p>
         </div>
 
@@ -137,7 +140,7 @@ export function SiteCard() {
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-accent"
               >
-                {siteConfig.handles.telegram}
+                {t('Contact.telegram')}
               </a>
             </li>
             <li>

@@ -1,12 +1,13 @@
 {
   "Meta": {
     "title": "Владислав Чикалкин — Senior Frontend / Fullstack",
-    "description": "Senior Frontend Engineer (React / TypeScript) и fullstack product-разработчик. 8+ лет в лизинговых системах.",
+    "description": "Senior Frontend / Fullstack Developer. React, TypeScript, Next.js, JavaScript.",
     "jobTitle": "Senior Frontend Engineer"
   },
   "Card": {
     "name": "Владислав Чикалкин",
-    "tagline": "Senior Frontend / Fullstack · React, TypeScript, Next.js. 8+ лет в лизинговых продуктах, которыми пользуются сотни менеджеров.",
+    "tagline": "Senior Frontend / Fullstack Developer, {years}+ лет опыта.",
+    "stackLine": "React, TypeScript, Next.js, JavaScript.",
     "experience": "Опыт",
     "stack": "Стек",
     "projects": "Проекты",
