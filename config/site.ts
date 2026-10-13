@@ -2,7 +2,6 @@ export const siteConfig = {
   url: 'https://vchikalkin.dev',
   careerStartYear: 2018,
   email: 'i@vchikalkin.ru',
-  phone: '+7 (926) 925-08-68',
   handles: {
     telegram: '@vchikalkin',
     github: 'github.com/vchikalkin',
