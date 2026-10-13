@@ -7,7 +7,7 @@ export const projectItems: readonly ProjectItem[] = [
   },
   {
     id: 'next_downloader_bot',
-    url: 'https://github.com/vchikalkin/next-downloader-bot',
+    url: 'https://t.me/next_downloader_bot',
   },
   {
     id: 'portfolio',
