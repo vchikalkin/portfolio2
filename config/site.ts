@@ -13,7 +13,11 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/v.chikalkin/',
     soundcloud: 'https://soundcloud.com/vchika',
     linkedin: 'https://www.linkedin.com/in/vladislav-chikalkin-b8a251167/',
-    resumeRu: '/resume.ru.md',
-    resumeEn: '/resume.en.md',
   },
 } as const;
+
+export function getResumeUrl(): string | null {
+  const url = process.env.NEXT_PUBLIC_RESUME_URL;
+
+  return url && url.length > 0 ? url : null;
+}

@@ -1,19 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useLocaleState } from '@/components/controls/locale-context';
 import { LocaleSwitcher } from '@/components/controls/locale-switcher';
 import { ThemeSwitcher } from '@/components/controls/theme-switcher';
-import { siteConfig } from '@/config/site';
+import { getResumeUrl, siteConfig } from '@/config/site';
 import { experienceItems } from '@/data/experience';
 import { projectItems } from '@/data/projects';
 import { skillItems } from '@/data/skills';
 
 export function SiteCard() {
   const t = useTranslations();
-  const { locale } = useLocaleState();
-  const resumeHref =
-    locale === 'ru' ? siteConfig.links.resumeRu : siteConfig.links.resumeEn;
+  const resumeHref = getResumeUrl();
   const years = new Date().getFullYear() - siteConfig.careerStartYear;
 
   return (
@@ -23,13 +20,16 @@ export function SiteCard() {
           <LocaleSwitcher />
           <ThemeSwitcher />
         </div>
-        <a
-          download
-          href={resumeHref}
-          className="text-sm font-medium text-accent underline-offset-4 transition-colors hover:underline"
-        >
-          {t('Card.resume')}
-        </a>
+        {resumeHref ? (
+          <a
+            href={resumeHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-foreground underline-offset-4 transition-opacity hover:underline hover:opacity-70"
+          >
+            {t('Card.resume')}
+          </a>
+        ) : null}
       </header>
 
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center py-8 md:py-10">
