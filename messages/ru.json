@@ -1,172 +1,67 @@
 {
   "Meta": {
-    "title": "Влад Чикалкин — Full Stack разработчик",
-    "description": "Веб-разработчик, 8+ лет. React, Next.js, TypeScript. Telegram-приложения и веб-платформы.",
-    "jobTitle": "Full Stack разработчик"
+    "title": "Владислав Чикалкин — Senior Frontend / Fullstack",
+    "description": "Senior Frontend Engineer (React / TypeScript) и fullstack product-разработчик. 7+ лет в лизинговых системах.",
+    "jobTitle": "Senior Frontend Engineer"
   },
-  "Nav": {
-    "skip": "Перейти к контенту",
-    "aria": "Основная навигация",
-    "menu": "Открыть меню",
-    "menuClose": "Закрыть меню",
-    "about": "Обо мне",
-    "services": "Услуги",
+  "Card": {
+    "name": "Владислав Чикалкин",
+    "tagline": "Senior Frontend / Fullstack · React, TypeScript, Next.js. 7+ лет в лизинговых продуктах, которыми пользуются сотни менеджеров.",
     "experience": "Опыт",
+    "stack": "Стек",
     "projects": "Проекты",
-    "home-lab": "Home Lab",
-    "skills": "Навыки",
-    "contact": "Контакты"
-  },
-  "Hero": {
-    "name": "Влад Чикалкин",
-    "tagline": "Full Stack разработчик · 8+ лет · React / Next.js / TypeScript",
-    "role": "Старший разработчик · Совкомбанк Технологии",
-    "description": "Разрабатываю веб-приложения, сайты и сервисы.",
-    "ctaPrimary": "Написать",
-    "ctaSecondary": "Проекты"
-  },
-  "Trust": {
-    "yearsCount": "8+",
-    "companiesCount": "3",
-    "years": "лет опыта",
-    "companies": "компании",
-    "fullstack": "Full Stack"
-  },
-  "About": {
-    "title": "Обо мне",
-    "summary": "Восемь лет делаю сайты и веб-приложения. Работал в финтехе. Помогаю людям и командам запускать проекты: портфолио, лендинги, полноценные сервисы.",
-    "facts": {},
-    "highlight": {
-      "title": "Калькулятор лизинговых платежей",
-      "description": "Сделал калькулятор лизинговых платежей в «Эволюции». За три месяца: веб-приложение, мобильная версия, интеграции с корпоративными сервисами. Продукт и продажи запустились быстрее."
-    }
-  },
-  "Services": {
-    "title": "Сайт от идеи до запуска",
-    "lead": "Хотите свой сайт, но не знаете, с чего начать? Выберем домен, продумаем структуру, разработаем и опубликуем.",
-    "cta": "Обсудить проект",
-    "list": [
-      "Сайт-портфолио",
-      "Личный сайт",
-      "Лендинг",
-      "Сайт для компании",
-      "Веб-приложение",
-      "Telegram Mini App",
-      "Telegram-бот",
-      "Помощь с запуском проекта"
-    ]
-  },
-  "HomeLab": {
-    "title": "Home Lab",
-    "description": "Домашняя инфраструктура: серверы, автоматизация, умный дом. Эксперименты и автоматизация повседневной задач."
+    "contact": "Контакты",
+    "resume": "Полное резюме"
   },
   "Experience": {
-    "title": "Опыт работы",
     "items": {
-      "sovcombanktech": {
-        "title": "Совкомбанк Технологии",
-        "role": "Старший разработчик",
-        "period": "Январь 2025 — Настоящее время",
-        "achievements": {
-          "0": "TODO: ключевое достижение в Совкомбанке",
-          "1": "TODO: вторая задача или метрика"
-        }
-      },
       "evolution": {
-        "title": "Лизинговая компания «Эволюция»",
-        "role": "Старший разработчик",
-        "period": "Август 2020 — Январь 2025",
-        "achievements": {
-          "0": "TODO: ключевое достижение в Эволюции",
-          "1": "TODO: вторая задача или метрика"
-        }
+        "title": "ЛК Эволюция",
+        "role": "Senior Fullstack Developer",
+        "period": "авг 2020 – н.в."
       },
       "carcade": {
-        "title": "Лизинговая компания «Carcade»",
-        "role": "Разработчик",
-        "period": "Июль 2018 — Август 2020",
-        "achievements": {
-          "0": "TODO: ключевое достижение в Carcade",
-          "1": "TODO: вторая задача или метрика"
-        }
+        "title": "Carcade Leasing",
+        "role": "Fullstack Developer",
+        "period": "июль 2018 – авг 2020"
       }
     }
   },
   "Projects": {
-    "title": "Проекты",
-    "viewProject": "Открыть",
     "items": {
-      "zapishis_online_bot": {
-        "title": "Запишись.online",
-        "description": "Встроенное в Telegram мобильное приложение для мастеров, репетиторов и клиентов. Запись на занятия, управление графиком и уведомления."
+      "victoria_pianist_site": {
+        "title": "Сайт пианистки"
       },
       "next_downloader_bot": {
-        "title": "Next Downloader Bot",
-        "description": "Telegram-бот для скачивания видео с TikTok, Instagram, YouTube Shorts и других платформ. Одним сообщением."
-      },
-      "eslint_config": {
-        "title": "ESLint Config Awesome",
-        "description": "Конфигурация ESLint с профилями для Next.js, React, TypeScript и Node.js. Используется во всех проектах."
+        "title": "next-downloader-bot"
       },
       "portfolio": {
-        "title": "Портфолио",
-        "description": "Персональный сайт с i18n, тёмной темой и Lighthouse 95+."
+        "title": "Портфолио"
       },
-      "next_tailwind_eslint_boilerplate": {
-        "title": "Next Tailwind ESLint Boilerplate",
-        "description": "Бойлерплейт на Next.js с Tailwind, ESLint, i18n и базовой архитектурой для быстрого старта новых проектов."
-      },
-      "victoria_pianist_site": {
-        "title": "Сайт пианистки",
-        "description": "Сайт пианистки: репертуар, биография, фото, видео, контакты."
+      "pixel_modem_fix": {
+        "title": "Pixel-Modem-Fix"
       }
     }
   },
   "Skills": {
-    "title": "Стек",
-    "all": "Все",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Инструменты",
-      "other": "Другое"
-    },
     "items": {
+      "typescript": "TypeScript",
       "react": "React",
       "nextjs": "Next.js",
-      "typescript": "TypeScript",
-      "tailwind": "Tailwind CSS",
-      "html_css": "HTML / CSS",
       "nodejs": "Node.js",
-      "nestjs": "NestJS",
-      "postgresql": "PostgreSQL",
+      "nestjs": "Nest.js",
+      "trpc": "tRPC",
       "redis": "Redis",
-      "rest_api": "REST API",
-      "todo_backend": "TODO: добавить backend-навык",
-      "git": "Git",
-      "eslint": "ESLint",
+      "postgresql": "PostgreSQL",
       "docker": "Docker",
-      "todo_tools": "TODO: добавить инструмент",
-      "telegram_bots": "Telegram Bots",
-      "i18n": "i18n",
-      "ci_cd": "CI/CD",
-      "todo_other": "TODO: добавить навык"
+      "dotnet": ".NET / C#"
     }
   },
   "Contact": {
-    "title": "Давайте обсудим проект",
-    "description": "Предложения о работе, сотрудничестве и разработке сайтов.",
     "email": "Email",
     "telegram": "Telegram",
     "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "resume": "Резюме",
-    "resumeTodo": "TODO: добавить ссылку на PDF",
-    "linkedinTodo": "TODO: добавить LinkedIn",
-    "copyEmail": "Скопировать email",
-    "copied": "Скопировано",
-    "soundcloud": "SoundCloud",
-    "instagram": "Instagram"
+    "linkedin": "LinkedIn"
   },
   "LocaleSwitcher": {
     "label": "Язык",

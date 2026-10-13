@@ -1,6 +1,7 @@
 export const siteConfig = {
   url: 'https://vchikalkin.dev',
   email: 'i@vchikalkin.ru',
+  phone: '+7 (926) 925-08-68',
   handles: {
     telegram: '@vchikalkin',
     github: 'github.com/vchikalkin',
@@ -11,15 +12,7 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/v.chikalkin/',
     soundcloud: 'https://soundcloud.com/vchika',
     linkedin: 'https://www.linkedin.com/in/vladislav-chikalkin-b8a251167/',
-    resume: null as string | null, // TODO: add resume PDF URL
+    resumeRu: '/resume.ru.md',
+    resumeEn: '/resume.en.md',
   },
-  sectionIds: [
-    'hero',
-    'about',
-    'services',
-    'experience',
-    'projects',
-    'skills',
-    'contact',
-  ] as const,
 } as const;

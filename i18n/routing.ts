@@ -1,10 +1,11 @@
-import { defineRouting } from 'next-intl/routing';
+export const locales = ['ru', 'en'] as const;
 
-export const routing = defineRouting({
-  locales: ['ru', 'en'],
-  defaultLocale: 'ru',
-  localePrefix: 'always',
-  localeDetection: false,
-});
+export type Locale = (typeof locales)[number];
 
-export type Locale = (typeof routing.locales)[number];
+export const defaultLocale: Locale = 'ru';
+
+export const localeStorageKey = 'portfolio-locale';
+
+export function isLocale(value: string | null | undefined): value is Locale {
+  return value === 'ru' || value === 'en';
+}
