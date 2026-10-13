@@ -1,172 +1,68 @@
 {
   "Meta": {
-    "title": "Vlad Chikalkin — Full Stack Developer",
-    "description": "Web developer, 8+ years. React, Next.js, TypeScript. Telegram apps and web platforms.",
-    "jobTitle": "Full Stack Developer"
+    "title": "Vladislav Chikalkin — Senior Frontend / Fullstack",
+    "description": "Senior Frontend / Fullstack Developer. React, TypeScript, Next.js, JavaScript.",
+    "jobTitle": "Senior Frontend Engineer"
   },
-  "Nav": {
-    "skip": "Skip to content",
-    "aria": "Main navigation",
-    "menu": "Open menu",
-    "menuClose": "Close menu",
-    "about": "About",
-    "services": "Services",
+  "Card": {
+    "name": "Vladislav Chikalkin",
+    "tagline": "Senior Frontend / Fullstack Developer, {years}+ years of experience.",
+    "stackLine": "React, TypeScript, Next.js, JavaScript.",
     "experience": "Experience",
+    "stack": "Stack",
     "projects": "Projects",
-    "home-lab": "Home Lab",
-    "skills": "Skills",
-    "contact": "Contact"
-  },
-  "Hero": {
-    "name": "Vlad Chikalkin",
-    "tagline": "Full Stack Developer · 8+ years · React / Next.js / TypeScript",
-    "role": "Senior Developer · Sovcombank Technologies",
-    "description": "I build web apps, sites, and services.",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "Projects"
-  },
-  "Trust": {
-    "yearsCount": "8+",
-    "companiesCount": "3",
-    "years": "years of experience",
-    "companies": "companies",
-    "fullstack": "Full Stack"
-  },
-  "About": {
-    "title": "About me",
-    "summary": "Eight years building websites and web apps. Fintech background. I help people and teams ship online: portfolio sites, landing pages, full services.",
-    "facts": {},
-    "highlight": {
-      "title": "Leasing payment calculator",
-      "description": "Built a leasing payment calculator at Evolution. In three months: web app, mobile version, integrations with corporate services. Product and sales launched faster."
-    }
-  },
-  "Services": {
-    "title": "Your site, from idea to launch",
-    "lead": "Want your own site but stuck on the first step? We pick a domain, plan the structure, build it, and publish.",
-    "cta": "Discuss your project",
-    "list": [
-      "Portfolio website",
-      "Personal website",
-      "Landing page",
-      "Company website",
-      "Web application",
-      "Telegram Mini App",
-      "Telegram bot",
-      "Help launching your project"
-    ]
-  },
-  "HomeLab": {
-    "title": "Home Lab",
-    "description": "Home infrastructure: servers, automation, smart home. A space for personal experiments and making everyday life more convenient."
+    "contact": "Contact",
+    "resume": "Download resume"
   },
   "Experience": {
-    "title": "Work experience",
     "items": {
-      "sovcombanktech": {
-        "title": "Sovcombank Technologies",
-        "role": "Senior Developer",
-        "period": "January 2025 — Present",
-        "achievements": {
-          "0": "TODO: key achievement at Sovcombank",
-          "1": "TODO: second task or metric"
-        }
-      },
       "evolution": {
-        "title": "Evolution Leasing",
-        "role": "Senior Developer",
-        "period": "August 2020 — January 2025",
-        "achievements": {
-          "0": "TODO: key achievement at Evolution",
-          "1": "TODO: second task or metric"
-        }
+        "title": "LK Evolution",
+        "role": "Senior Fullstack Developer",
+        "period": "Aug 2020 – Present"
       },
       "carcade": {
         "title": "Carcade Leasing",
-        "role": "Developer",
-        "period": "July 2018 — August 2020",
-        "achievements": {
-          "0": "TODO: key achievement at Carcade",
-          "1": "TODO: second task or metric"
-        }
+        "role": "Fullstack Developer",
+        "period": "Jul 2018 – Aug 2020"
       }
     }
   },
   "Projects": {
-    "title": "Projects",
-    "viewProject": "Open",
     "items": {
-      "zapishis_online_bot": {
-        "title": "Zapishis.online",
-        "description": "A Telegram mini app for tutors, masters, and clients. Booking, schedule management, and notifications."
+      "victoria_pianist_site": {
+        "title": "Pianist website"
       },
       "next_downloader_bot": {
-        "title": "Next Downloader Bot",
-        "description": "Telegram bot for downloading videos from TikTok, Instagram, YouTube Shorts, and more. One message."
-      },
-      "eslint_config": {
-        "title": "ESLint Config Awesome",
-        "description": "ESLint configuration with profiles for Next.js, React, TypeScript, and Node.js. Used across all projects."
+        "title": "Next Downloader Bot"
       },
       "portfolio": {
-        "title": "Portfolio",
-        "description": "Personal site with i18n, dark theme, and Lighthouse 95+."
+        "title": "Portfolio"
       },
-      "next_tailwind_eslint_boilerplate": {
-        "title": "Next Tailwind ESLint Boilerplate",
-        "description": "A Next.js boilerplate with Tailwind, ESLint, i18n, and a clean baseline architecture for new projects."
-      },
-      "victoria_pianist_site": {
-        "title": "Pianist website",
-        "description": "Site for a pianist: repertoire, bio, media, contacts."
+      "pixel_modem_fix": {
+        "title": "Pixel-Modem-Fix"
       }
     }
   },
   "Skills": {
-    "title": "Stack",
-    "all": "All",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Tools",
-      "other": "Other"
-    },
     "items": {
+      "typescript": "TypeScript",
       "react": "React",
       "nextjs": "Next.js",
-      "typescript": "TypeScript",
-      "tailwind": "Tailwind CSS",
-      "html_css": "HTML / CSS",
       "nodejs": "Node.js",
-      "nestjs": "NestJS",
-      "postgresql": "PostgreSQL",
+      "nestjs": "Nest.js",
+      "trpc": "tRPC",
       "redis": "Redis",
-      "rest_api": "REST API",
-      "todo_backend": "TODO: add backend skill",
-      "git": "Git",
-      "eslint": "ESLint",
+      "postgresql": "PostgreSQL",
       "docker": "Docker",
-      "todo_tools": "TODO: add tool",
-      "telegram_bots": "Telegram Bots",
-      "i18n": "i18n",
-      "ci_cd": "CI/CD",
-      "todo_other": "TODO: add skill"
+      "dotnet": ".NET / C#"
     }
   },
   "Contact": {
-    "title": "Let's discuss your project",
-    "description": "Jobs, collaboration, and full site builds.",
     "email": "Email",
     "telegram": "Telegram",
     "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "resume": "Resume",
-    "resumeTodo": "TODO: add PDF link",
-    "linkedinTodo": "TODO: add LinkedIn",
-    "copyEmail": "Copy email",
-    "copied": "Copied",
-    "soundcloud": "SoundCloud",
-    "instagram": "Instagram"
+    "linkedin": "LinkedIn"
   },
   "LocaleSwitcher": {
     "label": "Language",

@@ -1,30 +1,67 @@
 import './globals.css';
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
-import { getTranslations } from 'next-intl/server';
+import type { Metadata, Viewport } from 'next';
+import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from 'next/font/google';
 import { ThemeProvider } from '@/components/controls/theme-provider';
 import { siteConfig } from '@/config/site';
-import { routing } from '@/i18n/routing';
+import { defaultLocale } from '@/i18n/routing';
+import ruMessages from '@/messages/ru.json';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: '--font-plex-sans',
   subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const sourceSerif = Source_Serif_4({
+  variable: '--font-source-serif',
+  subsets: ['latin', 'cyrillic'],
+  weight: ['500', '600'],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: '--font-plex-mono',
   subsets: ['latin'],
+  weight: ['400', '500'],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations({ locale: routing.defaultLocale, namespace: 'Meta' });
+const { title, description } = ruMessages.Meta;
 
-  return {
-    metadataBase: new URL(siteConfig.url),
-    title: t('title'),
-    description: t('description'),
-  };
-}
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title,
+  description,
+  applicationName: ruMessages.Card.name,
+  authors: [{ name: ruMessages.Card.name, url: siteConfig.url }],
+  creator: ruMessages.Card.name,
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title,
+    description,
+    type: 'website',
+    url: '/',
+    siteName: ruMessages.Card.name,
+    locale: 'ru_RU',
+  },
+  twitter: {
+    // ponytail: no OG image yet — summary, not summary_large_image
+    card: 'summary',
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f2f3f5' },
+    { media: '(prefers-color-scheme: dark)', color: '#09090b' },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -34,10 +71,10 @@ export default function RootLayout({
   return (
     <html
       suppressHydrationWarning
-      lang={routing.defaultLocale}
-      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+      lang={defaultLocale}
+      className={`${ibmPlexSans.variable} ${sourceSerif.variable} ${ibmPlexMono.variable} dark h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="min-h-dvh bg-background text-foreground">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

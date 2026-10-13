@@ -1,6 +1,8 @@
 export const siteConfig = {
   url: 'https://vchikalkin.dev',
+  careerStartYear: 2018,
   email: 'i@vchikalkin.ru',
+  phone: '+7 (926) 925-08-68',
   handles: {
     telegram: '@vchikalkin',
     github: 'github.com/vchikalkin',
@@ -11,15 +13,11 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/v.chikalkin/',
     soundcloud: 'https://soundcloud.com/vchika',
     linkedin: 'https://www.linkedin.com/in/vladislav-chikalkin-b8a251167/',
-    resume: null as string | null, // TODO: add resume PDF URL
   },
-  sectionIds: [
-    'hero',
-    'about',
-    'services',
-    'experience',
-    'projects',
-    'skills',
-    'contact',
-  ] as const,
 } as const;
+
+export function getResumeUrl(): string | null {
+  const url = process.env.NEXT_PUBLIC_RESUME_URL;
+
+  return url && url.length > 0 ? url : null;
+}

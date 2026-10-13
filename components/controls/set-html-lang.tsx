@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
 
 interface SetHtmlLangProps {
@@ -7,9 +8,13 @@ interface SetHtmlLangProps {
 }
 
 export function SetHtmlLang({ locale }: SetHtmlLangProps) {
+  const t = useTranslations('Meta');
+  const title = t('title');
+
   useEffect(() => {
     document.documentElement.lang = locale;
-  }, [locale]);
+    document.title = title;
+  }, [locale, title]);
 
   return null;
 }

@@ -1,38 +1,39 @@
 'use client';
 
-import { useLocale, useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
-import { type Locale, routing } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
+import { useLocaleState } from '@/components/controls/locale-context';
+import { type Locale,locales } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 
 export function LocaleSwitcher() {
-  const locale = useLocale() as Locale;
-  const pathname = usePathname();
+  const { locale, setLocale } = useLocaleState();
   const t = useTranslations('LocaleSwitcher');
 
   return (
     <nav
       aria-label={t('label')}
-      className="flex gap-0.5 rounded-md border border-border-subtle bg-background/90 p-0.5 backdrop-blur-sm"
+      className="flex gap-0.5 rounded-md border border-border-subtle p-0.5"
     >
-      {routing.locales.map((nextLocale) => {
+      {locales.map((nextLocale: Locale) => {
         const isActive = locale === nextLocale;
 
         return (
-          <Link
-            replace
+          <button
             key={nextLocale}
-            href={pathname}
-            locale={nextLocale}
+            type="button"
+            aria-pressed={isActive}
             className={cn(
-              'inline-flex h-7 min-w-7 items-center justify-center rounded-md px-2 text-xs font-medium transition-colors',
+              'inline-flex h-7 min-w-7 items-center justify-center rounded-sm px-2 text-xs font-medium transition-colors',
               isActive
                 ? 'toggle-active'
                 : 'text-muted-foreground hover:bg-secondary hover:text-foreground',
             )}
+            onClick={() => {
+              setLocale(nextLocale);
+            }}
           >
             {t(nextLocale)}
-          </Link>
+          </button>
         );
       })}
     </nav>

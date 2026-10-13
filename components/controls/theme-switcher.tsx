@@ -95,7 +95,7 @@ export function ThemeSwitcher() {
   );
 
   const shellClassName =
-    'flex gap-0.5 rounded-md border border-border-subtle bg-background/90 p-0.5 backdrop-blur-sm';
+    'flex gap-0.5 rounded-md border border-border-subtle p-0.5';
 
   if (!isMounted) {
     return (

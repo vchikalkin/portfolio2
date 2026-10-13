@@ -1,12 +1,29 @@
-'use client';
+import { Home } from '@/components/card/home';
+import { siteConfig } from '@/config/site';
+import ruMessages from '@/messages/ru.json';
 
-import { useEffect } from 'react';
-import { routing } from '@/i18n/routing';
+export default function HomePage() {
+  const ldJson = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: ruMessages.Card.name,
+    jobTitle: ruMessages.Meta.jobTitle,
+    url: siteConfig.url,
+    email: siteConfig.email,
+    sameAs: [
+      siteConfig.links.github,
+      siteConfig.links.telegram,
+      siteConfig.links.linkedin,
+    ],
+  };
 
-export default function RootPage() {
-  useEffect(() => {
-    window.location.replace(`/${routing.defaultLocale}`);
-  }, []);
-
-  return null;
+  return (
+    <>
+      <Home />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
+      />
+    </>
+  );
 }
