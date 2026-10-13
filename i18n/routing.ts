@@ -1,11 +1,15 @@
-export const locales = ['ru', 'en'] as const;
+import { defineRouting } from 'next-intl/routing';
 
-export type Locale = (typeof locales)[number];
+export const routing = defineRouting({
+  locales: ['ru', 'en'],
+  defaultLocale: 'ru',
+  // static export: no middleware — unprefixed `/` is wired by hand as ru
+  localePrefix: 'as-needed',
+  localeDetection: false,
+});
 
-export const defaultLocale: Locale = 'ru';
+export type AppLocale = (typeof routing.locales)[number];
 
-export const localeStorageKey = 'portfolio-locale';
-
-export function isLocale(value: string | null | undefined): value is Locale {
-  return value === 'ru' || value === 'en';
+export function localePath(locale: AppLocale): string {
+  return locale === routing.defaultLocale ? '/' : `/${locale}`;
 }

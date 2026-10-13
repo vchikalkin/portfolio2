@@ -14,7 +14,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 ## Architecture
 - `components/ui/` — atomic UI primitives
 - `components/sections/` or `components/modules/` — page blocks
-- `messages/{locale}.json` + routes under `app/[locale]/`
+- `messages/{locale}.json` + routes: `/` (ru), `/en`
 - Utilities in `lib/utils.ts`; always use `cn` for class names
 
 ## Components
