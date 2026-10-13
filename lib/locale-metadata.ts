@@ -35,6 +35,7 @@ export async function buildLocaleMetadata(locale: AppLocale): Promise<Metadata> 
       url: path,
       siteName: name,
       locale: locale === 'ru' ? 'ru_RU' : 'en_US',
+      alternateLocale: locale === 'ru' ? ['en_US'] : ['ru_RU'],
     },
     twitter: {
       // ponytail: no OG image yet — summary, not summary_large_image
