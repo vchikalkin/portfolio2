@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from 'next/font/google';
 import { ThemeProvider } from '@/components/controls/theme-provider';
 import { siteConfig } from '@/config/site';
@@ -24,25 +24,43 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ['400', '500'],
 });
 
+const { title, description } = ruMessages.Meta;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: ruMessages.Meta.title,
-  description: ruMessages.Meta.description,
+  title,
+  description,
+  applicationName: ruMessages.Card.name,
+  authors: [{ name: ruMessages.Card.name, url: siteConfig.url }],
+  creator: ruMessages.Card.name,
   alternates: {
-    canonical: siteConfig.url,
+    canonical: '/',
   },
   openGraph: {
-    title: ruMessages.Meta.title,
-    description: ruMessages.Meta.description,
+    title,
+    description,
     type: 'website',
-    url: siteConfig.url,
+    url: '/',
     siteName: ruMessages.Card.name,
+    locale: 'ru_RU',
   },
   twitter: {
-    card: 'summary_large_image',
-    title: ruMessages.Meta.title,
-    description: ruMessages.Meta.description,
+    // ponytail: no OG image yet — summary, not summary_large_image
+    card: 'summary',
+    title,
+    description,
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f2f3f5' },
+    { media: '(prefers-color-scheme: dark)', color: '#09090b' },
+  ],
 };
 
 export default function RootLayout({
