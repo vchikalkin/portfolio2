@@ -7,7 +7,6 @@
   "Card": {
     "name": "Vladislav Chikalkin",
     "tagline": "Senior Frontend / Fullstack Developer, {years}+ years of experience.",
-    "stackLine": "React, TypeScript, Next.js, JavaScript.",
     "experience": "Experience",
     "stack": "Stack",
     "projects": "Projects",
@@ -37,10 +36,10 @@
         "title": "Next Downloader Bot"
       },
       "portfolio": {
-        "title": "Portfolio"
+        "title": "Portfolio site"
       },
       "pixel_modem_fix": {
-        "title": "Pixel-Modem-Fix"
+        "title": "Pixel Modem Fix"
       }
     }
   },

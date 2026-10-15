@@ -39,8 +39,6 @@ export function SiteCard() {
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg">
             {t('Card.tagline', { years })}
-            <br />
-            {t('Card.stackLine')}
           </p>
         </div>
 
@@ -85,10 +83,13 @@ export function SiteCard() {
             >
               {t('Card.stack')}
             </h2>
-            <ul className="flex flex-wrap gap-x-3 gap-y-1.5 text-sm">
+            <ul className="flex flex-wrap gap-1.5">
               {skillItems.map((skillId) => {
                 return (
-                  <li key={skillId} className="text-foreground">
+                  <li
+                    key={skillId}
+                    className="rounded-md border border-border-subtle bg-secondary px-2 py-0.5 text-xs text-secondary-foreground"
+                  >
                     {t(`Skills.items.${skillId}`)}
                   </li>
                 );
