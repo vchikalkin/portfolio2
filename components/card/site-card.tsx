@@ -42,7 +42,7 @@ export function SiteCard() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 border-t border-border-subtle pt-8 md:mt-14 md:grid-cols-3 md:gap-10 md:pt-10">
+        <div className="mt-6 grid gap-8 border-t border-border-subtle pt-6 md:mt-8 md:grid-cols-3 md:gap-10 md:pt-8">
           <section aria-labelledby="experience-heading">
             <h2
               id="experience-heading"
