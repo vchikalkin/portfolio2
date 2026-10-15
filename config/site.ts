@@ -1,6 +1,5 @@
 export const siteConfig = {
   url: 'https://vchikalkin.dev',
-  careerStartYear: 2018,
   email: 'i@vchikalkin.ru',
   handles: {
     telegram: '@vchikalkin',
